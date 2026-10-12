@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double X, Y;
+    cin >> X >> Y;
+    
+    int day = 1;
+    double sum = X;
+    
+    do {
+        if (sum >= Y) break;
+        sum *= 1.1;
+        day++;
+    } while (true);
+    
+    cout << day << endl;
+    return 0;
+}
